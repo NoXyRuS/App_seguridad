@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ovalo_laredo">
+
+    <!-- Encabezado -->
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Bienvenido"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnLogout"
+        android:layout_width="40dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón de Visualizar Incidencias -->
+
+    <Button
+        android:id="@+id/btnVisualizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#D1C4E9"
+        android:drawableLeft="@drawable/ic_view"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Visualizar Incidencias"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <!-- Botón de Modificar Incidencias -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

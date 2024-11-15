@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Tema que hereda de AppCompat -->
+    <style name="Theme.MiSeguridadApp" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+</resources>

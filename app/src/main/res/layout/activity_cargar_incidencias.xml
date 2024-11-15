@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ovalo_laredo">
+
+    <!-- Encabezado -->
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Cargar Incidencias"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón de Cargar archivo Excel -->
+
+    <Button
+        android:id="@+id/btnCargarExcel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#2E7D32"
+        android:drawableLeft="@drawable/ic_excel"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Cargar archivo Excel"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <!-- Botón de Cargar archivo CSV -->
+
+    <Button
+        android:id="@+id/btnCargarCSV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#45B058"
+        android:drawableLeft="@drawable/ic_csv"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Cargar archivo CSV"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCargarExcel" />
+
+    <!-- Botón de Cargar archivo JSON -->
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#6B6B6B"
+        android:drawableLeft="@drawable/ic_json"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Cargar archivo JSON"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCargarCSV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
